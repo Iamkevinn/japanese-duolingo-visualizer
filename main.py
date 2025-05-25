@@ -23,11 +23,11 @@ def log(message: str) -> None:
 def run() -> tuple[bool, bool]:
     # Initialize environment.
     base_api_url = "https://www.duolingo.com"
-    username = environ["DUOLINGO_USERNAME"]
+    username = environ["keviinbg"]
     credential, passwordless = (
         (credential, True)
-        if (credential := environ.get("DUOLINGO_JWT")) is not None
-        else (environ["DUOLINGO_PASSWORD"], False)
+        if (credential := environ.get("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjYzMDcyMDAwMDAsImlhdCI6MCwic3ViIjo3MzgzMzkwNDl9.yP-3TSf5ql1uiEArQ0FoMAGALp1HhWjwFig7XCixcfg")) is not None
+        else (environ["K3vsD951ukscp"], False)
     )
 
     # Declare paths.
